@@ -10,7 +10,7 @@ public class Response implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    private java.lang.Boolean type;
-   private java.lang.String messaje;
+   private java.lang.String message;
 
    public Response()
    {
@@ -26,20 +26,20 @@ public class Response implements java.io.Serializable
       this.type = type;
    }
 
-   public java.lang.String getMessaje()
+   public java.lang.String getMessage()
    {
-      return this.messaje;
+      return this.message;
    }
 
-   public void setMessaje(java.lang.String messaje)
+   public void setMessage(java.lang.String message)
    {
-      this.messaje = messaje;
+      this.message = message;
    }
 
-   public Response(java.lang.Boolean type, java.lang.String messaje)
+   public Response(java.lang.Boolean type, java.lang.String message)
    {
       this.type = type;
-      this.messaje = messaje;
+      this.message = message;
    }
 
 }
