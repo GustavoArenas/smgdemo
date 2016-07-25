@@ -9,8 +9,8 @@ public class Response implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   public static java.lang.Boolean type;
-   public static java.lang.String message;
+   private java.lang.Boolean type;
+   private  java.lang.String message;
 
    public Response()
    {
