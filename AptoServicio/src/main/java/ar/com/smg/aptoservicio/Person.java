@@ -12,7 +12,7 @@ public class Person implements java.io.Serializable
    private java.lang.String name;
    private int age;
    private java.lang.String gender;
-   private double percentil;
+   private float percentil;
 
    public Person()
    {
@@ -48,18 +48,18 @@ public class Person implements java.io.Serializable
       this.gender = gender;
    }
 
-   public double getPercentil()
+   public float getPercentil()
    {
       return this.percentil;
    }
 
-   public void setPercentil(double percentil)
+   public void setPercentil(float percentil)
    {
       this.percentil = percentil;
    }
 
    public Person(java.lang.String name, int age, java.lang.String gender,
-         double percentil)
+         float percentil)
    {
       this.name = name;
       this.age = age;
