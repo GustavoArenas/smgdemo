@@ -5,5 +5,10 @@ import java.lang.Number;
 rule "reglaguiada"
 	dialect "mvel"
 	when
+		Person( gender == "M" )
 	then
+		insert( new Person() );
+		Person fact0 = new Person();
+		fact0.setResultado( "esta ok" );
+		insertLogical( fact0 );
 end
