@@ -5,10 +5,10 @@ rule "reglamanual_1"
 	when
 		person : Person(age >= 18, age <= 24, gender == "M", percentil >= 0, percentil <= 50)
 	then
-	    Response response = new Response;
+	    Response response = new Response();
 		response.setType(true);
 		response.setMessage("Esta OK");
-		
+		update(response);
 		System.out.println("Entro por la regla ok");
 end
 
