@@ -5,11 +5,11 @@ package ar.com.smg.aptoservicio;
 rule "reglamanual_1"
 	ruleflow-group "AptoServicio-group"
 	when
-		Person(age >= 18, age <= 24, gender == "M", percentil >= 0, percentil <= 50)
+		person(age >= 18, age <= 24, gender == "M", percentil >= 0, percentil <= 50)
 	then
 	   
-		Response.setType(true);
-		Response.setMessage("Esta OK");
+		response.setType(true);
+		response.setMessage("Esta OK");
 		update(response);
 		System.out.println("Entro por la regla ok");
 end
@@ -17,11 +17,11 @@ end
 rule "reglamanual_2"
 	ruleflow-group "AptoServicio-group"
 	when
-		Person(age >= 25, age <= 54, gender == "M", percentil >= 0, percentil <= 50)
+		person(age >= 25, age <= 54, gender == "M", percentil >= 0, percentil <= 50)
 	then
 
-		Response.setType(true);
-		Response.setMessage("Esta OK");
+		response.setType(true);
+		response.setMessage("Esta OK");
 		update(response);
 		System.out.println("Entro por la regla ok");
 end
