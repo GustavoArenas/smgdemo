@@ -14,8 +14,6 @@ public class Person implements java.io.Serializable
    private java.lang.String gender;
    private float percentil;
 
-   private java.lang.String resultado;
-
    public Person()
    {
    }
@@ -60,24 +58,13 @@ public class Person implements java.io.Serializable
       this.percentil = percentil;
    }
 
-   public java.lang.String getResultado()
-   {
-      return this.resultado;
-   }
-
-   public void setResultado(java.lang.String resultado)
-   {
-      this.resultado = resultado;
-   }
-
    public Person(java.lang.String name, int age, java.lang.String gender,
-         float percentil, java.lang.String resultado)
+         float percentil)
    {
       this.name = name;
       this.age = age;
       this.gender = gender;
       this.percentil = percentil;
-      this.resultado = resultado;
    }
 
 }
