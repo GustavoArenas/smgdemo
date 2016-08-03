@@ -1,2 +1,16 @@
 package ar.com.smg.aptoservicio;
+package ar.com.smg.aptoservicio;
+//generated from Decision Table
+// rule values at C14, header at C9
+rule "reglamanual_1"
+	ruleflow-group "AptoServicio-group"
+	when
+		person : Person(age >= 18, age <= 24, gender == "M", percentil >= 0, percentil <= 50)
+	then
+	    Response response = new Response;
+		response.setType(true);
+		response.setMessage("Esta OK");
+		upadate(response);
+		System.out.println("Entro por la regla ok");
+end
 
