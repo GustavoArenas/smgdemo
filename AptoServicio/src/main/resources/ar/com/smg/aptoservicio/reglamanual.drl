@@ -8,7 +8,7 @@ rule "reglamanual_1"
 	    Response response = new Response;
 		response.setType(true);
 		response.setMessage("Esta OK");
-		upadate(response);
+		
 		System.out.println("Entro por la regla ok");
 end
 
