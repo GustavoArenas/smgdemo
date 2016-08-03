@@ -1,5 +1,7 @@
 package ar.com.smg.aptoservicio;
 
+import ar.com.smg.aptoservicio.Response;
+
 rule "reglamanual_1"
 	ruleflow-group "AptoServicio-group"
 	when
