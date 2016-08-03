@@ -20,8 +20,8 @@ rule "reglamanual_2"
 		Person(age >= 25, age <= 54, gender == "M", percentil >= 0, percentil <= 50)
 	then
 
-		response.setType(true);
-		response.setMessage("Esta OK");
+		Response.setType(true);
+		Response.setMessage("Esta OK");
 		update(response);
 		System.out.println("Entro por la regla ok");
 end
