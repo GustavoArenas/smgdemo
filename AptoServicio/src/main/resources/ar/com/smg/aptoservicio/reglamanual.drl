@@ -1,7 +1,5 @@
 package ar.com.smg.aptoservicio;
-package ar.com.smg.aptoservicio;
-//generated from Decision Table
-// rule values at C14, header at C9
+
 rule "reglamanual_1"
 	ruleflow-group "AptoServicio-group"
 	when
