@@ -1,6 +1,6 @@
 package ar.com.smg.aptoservicio;
 
-Global Response response;
+global Response response;
 
 rule "reglamanual_1"
 	ruleflow-group "AptoServicio-group"
