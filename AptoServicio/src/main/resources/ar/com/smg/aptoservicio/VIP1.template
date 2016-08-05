@@ -51,13 +51,15 @@
   <table>
     <entry>
       <string>$default</string>
-      <list/>
+      <list>
+        <string>Gustavo</string>
+      </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
       <list/>
     </entry>
   </table>
-  <idCol>0</idCol>
+  <idCol>1</idCol>
   <rowsCount>0</rowsCount>
 </rule>
