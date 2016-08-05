@@ -1,2 +1,7 @@
 package ar.com.smg.aptoservicio;
 
+rule "VIPT_0"
+	when 
+		Person()
+then 
+end
