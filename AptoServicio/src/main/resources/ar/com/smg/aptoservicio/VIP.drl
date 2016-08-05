@@ -1,2 +1,25 @@
 package ar.com.smg.aptoservicio;
 
+import ar.com.smg.aptoservicio.Person;
+import ar.com.smg.aptoservicio.Response;
+global Response response;
+
+rule "VIP_1"
+	ruleflow-group "VIP-group"
+	when
+		Person(name == "Maradona")
+	then
+		response.setType(true);
+		response.setMessage("Es pesona VIP");
+		System.out.println("Entro por la regla ok");
+end
+
+rule "VIP_2"
+	ruleflow-group "VIP-group"
+	when
+		Person(name != "Maradona")
+	then
+		response.setType(false);
+		response.setMessage("No es pesona VIP");
+		System.out.println("Entro por la regla ok");
+end
