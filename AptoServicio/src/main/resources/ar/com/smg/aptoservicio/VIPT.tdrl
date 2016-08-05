@@ -10,6 +10,14 @@ rule "VIPT_0"
 end
 rule "VIPT_1"
 	when 
+		person : Person(name : name == "Maradona", age : age > 20)
+	then 
+		Response $var0 = new Response();
+		$var0.setType( true );
+		insert( $var0 );
+end
+rule "VIPT_2"
+	when 
 		person : Person(name : name != "Maradona")
 	then 
 		Response $var0 = new Response();
