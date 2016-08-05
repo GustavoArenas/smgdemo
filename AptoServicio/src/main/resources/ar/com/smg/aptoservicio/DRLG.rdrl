@@ -3,9 +3,11 @@ package ar.com.smg.aptoservicio;
 import java.lang.Number;
 
 rule "DRLG"
+	@freeze_actions(true)
 	dialect "mvel"
+	no-loop true
 	when
-		Person( name == "$param" )
+		Person( name == "Maradona" )
 	then
 		Response fact0 = new Response();
 		fact0.setType( true );
