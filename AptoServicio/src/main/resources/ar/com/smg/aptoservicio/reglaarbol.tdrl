@@ -1,2 +1,10 @@
 package ar.com.smg.aptoservicio;
 
+rule "reglaarbol_0"
+	when 
+		person : Person(name : name == "Maradona")
+	then 
+		Response $var0 = new Response();
+		$var0.setType( true );
+		insert( $var0 );
+end
