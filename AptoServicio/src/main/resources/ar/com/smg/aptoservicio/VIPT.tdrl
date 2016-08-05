@@ -8,3 +8,11 @@ rule "VIPT_0"
 		$var0.setType( true );
 		insert( $var0 );
 end
+rule "VIPT_1"
+	when 
+		person : Person(name : name != "Maradona")
+	then 
+		Response $var0 = new Response();
+		$var0.setType( false );
+		insert( $var0 );
+end
