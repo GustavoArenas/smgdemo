@@ -5,6 +5,23 @@
   <metadataList/>
   <lhs>
     <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>Maradona,Messi</value>
+            <operator>in</operator>
+            <constraintValueType>1</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>Person</factType>
+            <fieldName>name</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
       <factType>Person</factType>
       <boundName>name</boundName>
       <isNegated>false</isNegated>
@@ -15,10 +32,16 @@
   </lhs>
   <rhs>
     <assert>
-      <fieldValues/>
+      <fieldValues>
+        <fieldValue>
+          <field>type</field>
+          <value>true</value>
+          <nature>1</nature>
+          <type>Boolean</type>
+        </fieldValue>
+      </fieldValues>
       <factType>Response</factType>
-      <boundName>type</boundName>
-      <isBound>true</isBound>
+      <isBound>false</isBound>
     </assert>
   </rhs>
   <imports>
