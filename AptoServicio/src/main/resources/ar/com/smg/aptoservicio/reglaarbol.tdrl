@@ -2,9 +2,25 @@ package ar.com.smg.aptoservicio;
 
 rule "reglaarbol_0"
 	when 
-		person : Person(name : name == "Maradona")
+		person : Person(name : name in  ( "Maradona", "Messi" ))
 	then 
 		Response $var0 = new Response();
 		$var0.setType( true );
+		insert( $var0 );
+end
+rule "reglaarbol_1"
+	when 
+		person : Person(name : name in  ( "Maradona", "Messi" ), age : age >= 40)
+	then 
+		Response $var0 = new Response();
+		$var0.setType( false );
+		insert( $var0 );
+end
+rule "reglaarbol_2"
+	when 
+		person : Person(name : name in  ( "Maradona", "Messi" ))
+	then 
+		Response $var0 = new Response();
+		$var0.setType( false );
 		insert( $var0 );
 end
