@@ -7,4 +7,7 @@ rule "DRLG"
 	when
 		Person( name == "$param" )
 	then
+		Response fact0 = new Response();
+		fact0.setType( true );
+		insertLogical( fact0 );
 end
