@@ -52,7 +52,7 @@
     <entry>
       <string>$default</string>
       <list>
-        <string>Gustavo</string>
+        <string>true</string>
       </list>
     </entry>
     <entry>
@@ -60,6 +60,6 @@
       <list/>
     </entry>
   </table>
-  <idCol>1</idCol>
+  <idCol>2</idCol>
   <rowsCount>0</rowsCount>
 </rule>
