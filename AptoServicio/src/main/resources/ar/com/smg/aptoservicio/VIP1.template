@@ -8,7 +8,7 @@
       <constraintList>
         <constraints>
           <fieldConstraint>
-            <value>Maradona,Messi</value>
+            <value>$name</value>
             <operator>in</operator>
             <constraintValueType>1</constraintValueType>
             <expression>
@@ -35,8 +35,8 @@
       <fieldValues>
         <fieldValue>
           <field>type</field>
-          <value>true</value>
-          <nature>1</nature>
+          <value>$param</value>
+          <nature>7</nature>
           <type>Boolean</type>
         </fieldValue>
       </fieldValues>
@@ -52,9 +52,23 @@
   <table>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+        <string>2</string>
+        <string>3</string>
+        <string>0</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$param</string>
+      <list>
+        <string></string>
+        <string></string>
+        <string></string>
+        <string></string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>3</idCol>
+  <rowsCount>4</rowsCount>
 </rule>
