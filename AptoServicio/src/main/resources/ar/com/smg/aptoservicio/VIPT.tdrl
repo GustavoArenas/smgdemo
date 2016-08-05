@@ -2,6 +2,9 @@ package ar.com.smg.aptoservicio;
 
 rule "VIPT_0"
 	when 
-		Person()
-then 
+		person : Person(name : name == "Maradona")
+	then 
+		Response $var0 = new Response();
+		$var0.setType( true );
+		insert( $var0 );
 end
