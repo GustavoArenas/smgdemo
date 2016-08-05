@@ -3,7 +3,6 @@ package ar.com.smg.aptoservicio;
 import java.lang.Number;
 
 rule "DRLG"
-	@freeze_actions(true)
 	dialect "mvel"
 	no-loop true
 	when
