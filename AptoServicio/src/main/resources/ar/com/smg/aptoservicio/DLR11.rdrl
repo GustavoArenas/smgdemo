@@ -1,9 +1,0 @@
-package ar.com.smg.aptoservicio;
-
-import java.lang.Number;
-
-rule "DLR11"
-	dialect "mvel"
-	when
-	then
-end
