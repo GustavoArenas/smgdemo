@@ -3,7 +3,16 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
+  <lhs>
+    <fact>
+      <factType>Person</factType>
+      <boundName>a</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
   <rhs/>
   <imports>
     <imports/>
