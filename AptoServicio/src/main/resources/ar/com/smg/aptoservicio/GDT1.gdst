@@ -1,5 +1,6 @@
 <decision-table52>
   <tableName>GDT1</tableName>
+  <parentName>reglaarbol_0</parentName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>-1</width>
@@ -84,23 +85,23 @@
       <acceptedTypes>
         <entry>
           <string>INSERT_ROW</string>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </entry>
         <entry>
           <string>INSERT_COLUMN</string>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </entry>
         <entry>
           <string>DELETE_ROW</string>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </entry>
         <entry>
           <string>DELETE_COLUMN</string>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </entry>
         <entry>
           <string>UPDATE_COLUMN</string>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </entry>
       </acceptedTypes>
     </filter>
