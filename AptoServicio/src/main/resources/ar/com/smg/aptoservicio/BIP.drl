@@ -1,14 +1,28 @@
 package ar.com.smg.aptoservicio;
 
- 
- 
 import ar.com.smg.aptoservicio.Person;
 import ar.com.smg.aptoservicio.Response;
 global Response response;
 
-rule "BIP_0" extends "reglaarbol_0"
+rule "BIP_0" extends "VIP_0"
 	ruleflow-group "BIP-group"
     when
 		
 	then
+end
+
+rule "BIP_1" extends "VIP_1"
+    ruleflow-group "BIP-group"	
+	when
+		
+	then
+		
+end
+
+rule "BIP_2" extends "VIP_2"
+	ruleflow-group "BIP-group"
+	when
+		
+	then
+		
 end
