@@ -8,5 +8,7 @@ global Response response;
 
 rule "BIP_0" extends "reglaarbol_0"
 	ruleflow-group "BIP-group"
-
+    when
+		
+	then
 end
