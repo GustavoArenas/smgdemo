@@ -4,14 +4,14 @@ import ar.com.smg.aptoservicio.Person;
 import ar.com.smg.aptoservicio.Response;
 global Response response;
 
-rule "BIP_0" extends "VIP_0"
+rule "BIP_0" extends "ar.com.smg.aptoservicio.VIP_0"
 	ruleflow-group "BIP-group"
     when
 		
 	then
 end
 
-rule "BIP_1" extends "VIP_1"
+rule "BIP_1" extends "ar.com.smg.aptoservicio.VIP_1"
     ruleflow-group "BIP-group"	
 	when
 		
@@ -19,7 +19,7 @@ rule "BIP_1" extends "VIP_1"
 		
 end
 
-rule "BIP_2" extends "VIP_2"
+rule "BIP_2" extends "ar.com.smg.aptoservicio.VIP_2"
 	ruleflow-group "BIP-group"
 	when
 		
